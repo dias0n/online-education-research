@@ -1,21 +1,121 @@
-This research was carried out mainly on the third-year students of the Business School at Suleyman Demirel University. The reason for choosing this kind of participants was that they experienced firsthand online education and how it was dealt with in the SDU. In order to illustrate the impact on the entire population sampling technique was executed. 
-A 5 point Likert scale is a tool used in surveys to assess the diversity of participants' opinions on an area of interest in the form of evaluation questions:
+# 🎓 Online Education Analysis at University
 
-1. Agreement of participation-Yes/No
-2. Gender-Female, Male and Prefer not to say
-3. Major of studying-Accounting and audit, Finance, Management, Economics and Digital marketing
-4. Impact on BS-where 1 is Very low and 5 is Very high
-5. Distruption- where 1 is Not at all and 5 is To a great extent
-6. Crisis management-where 1 is Inadequate and 5 is Very good
-7. Communication efficiency among studends and staff members-where 1 is Not at all and 5 is To a great extent
-8. Strategy change in SDU-where 1 is Not at all and 5 is To a great extent
-9. Stressfulness-True or False
-10. Stress level rate-where 1 is Not at all stressfull and 5 is Extremely stressful
-11. Course evaluation-where 1 is Very poor and 5 is Very good
-12. Expectations impact-where 1 is Not at all and 5 is To a great extent
-13. Connections dynamics among groupmates-where 1 is Very poor and 5 is Very good
-14. Academic Freedom affected-where 1 is Much worse and 5 is Much better
-15. Rate platforms-where 1 is Very low and 5 is Very high
-16. OER-open educational resources, where 1 is Totally useless and 5 is Very useful
-17. Support from SDU-where 1 is Never and 5 is A great deal
-18. Total-overal sum of points for each observation
+## 📌 Project Overview
+
+This project explores student behavior and engagement in online education at a university using data analysis and machine learning techniques. The goal is to uncover patterns, segment students, and evaluate the effectiveness of different learning formats.
+
+Both **supervised** and **unsupervised learning** approaches are used, alongside extensive preprocessing and visualization.
+
+---
+
+
+## 🧾 Data Collection
+
+This research was conducted among third-year students of the Business School at Suleyman Demirel University. These participants were specifically selected because they had direct experience with online education during the pandemic and could provide informed insights.
+
+A **stratified sampling technique** was used to ensure representative data. Data was collected using a structured survey based on a **5-point Likert scale** for most questions.
+
+### 📋 Survey Questions
+
+- **Agreement of participation** — Yes / No  
+- **Gender** — Female / Male / Prefer not to say  
+- **Major of study** — Accounting and Audit / Finance / Management / Economics / Digital Marketing  
+- **Impact on Business School** — 1 (Very low) to 5 (Very high)  
+- **Disruption** — 1 (Not at all) to 5 (To a great extent)  
+- **Crisis management** — 1 (Inadequate) to 5 (Very good)  
+- **Communication efficiency (students & staff)** — 1 (Not at all) to 5 (To a great extent)  
+- **Strategic change at SDU** — 1 (Not at all) to 5 (To a great extent)  
+- **Stressfulness** — True / False  
+- **Stress level rating** — 1 (Not at all stressful) to 5 (Extremely stressful)  
+- **Course evaluation** — 1 (Very poor) to 5 (Very good)  
+- **Expectations impact** — 1 (Not at all) to 5 (To a great extent)  
+- **Connection dynamics among groupmates** — 1 (Very poor) to 5 (Very good)  
+- **Academic freedom affected** — 1 (Much worse) to 5 (Much better)  
+- **Platform rating** (e.g. Moodle, Zoom, Teams) — 1 (Very low) to 5 (Very high)  
+- **OER (Open Educational Resources)** — 1 (Totally useless) to 5 (Very useful)  
+- **Support from SDU** — 1 (Never) to 5 (A great deal)  
+- **Total** — Sum of all numerical answers per participant (used for composite score analysis)
+
+This structured data was used as input for further statistical analysis and machine learning models.
+
+---
+
+## 🗂️ Project Structure
+
+### 1. 📊 Data Preprocessing
+- Handling missing values and duplicates
+- Normalizing numerical features using `MinMaxScaler`
+- Exploratory data analysis (EDA): distributions, correlations, feature profiling
+
+### 2. 🤖 Supervised Learning
+
+#### 2.1 Random Forest
+- Train-test split
+- Parameter tuning
+- Underfitting and overfitting detection
+- Evaluation metrics: accuracy, confusion matrix, etc.
+
+#### 2.2 Decision Tree
+- Feature and target selection
+- Model training and visualization
+- Hyperparameter tuning
+- Performance evaluation
+
+#### 2.3 K-Nearest Neighbors (KNN)
+- Selecting optimal number of neighbors
+- Model performance analysis
+
+#### 2.4 Support Vector Machine (SVM)
+- Model training
+- Comparison with other classifiers
+- Visualization of classification boundaries
+
+---
+
+### 3. 🔍 Unsupervised Learning – K-Means Clustering
+- Feature selection
+- Optimal number of clusters using the Elbow method
+- Clustering analysis
+- Dimensionality reduction with PCA for visualization
+- Cluster interpretation
+
+---
+
+### 4. 📈 Model Evaluation & Optimization
+- Hyperparameter tuning
+- Learning curves to detect overfitting/underfitting
+- Metric-based model comparison
+- Insights and interpretation of results
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python 3.8+**
+- **NumPy** – numerical computations
+- **Pandas** – data manipulation
+- **Matplotlib** & **Seaborn** – data visualization
+- **Scikit-learn** – machine learning models and tools
+  - Classifiers: RandomForest, DecisionTree, KNN, SVM
+  - Unsupervised Learning: KMeans, PCA
+  - Preprocessing: LabelEncoder, MinMaxScaler
+  - Model selection: Train-test split, GridSearchCV
+  - Evaluation: Accuracy, F1-score, Confusion Matrix, Silhouette Score, R2 Score, etc.
+- **Warnings** – suppress unnecessary warnings for cleaner output
+
+---
+
+## 📌 Key Takeaways
+- Practical application of both supervised and unsupervised ML algorithms
+- Complete data science pipeline from preprocessing to evaluation
+- Insights into student behavior and potential ways to personalize the learning experience
+
+---
+
+## 📁 How to Run
+1. Clone the repository
+2. Install dependencies:  
+   ```bash
+   pip install -r requirements.txt
+
+
